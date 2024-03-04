@@ -19,7 +19,7 @@ public class EmailService : IEmailService
             await client.ConnectAsync("imap.gmail.com", 993, SecureSocketOptions.SslOnConnect);
 
             // Ingresa las credenciales de tu cuenta de correo
-            await client.AuthenticateAsync("ljosecarlos295@gmail.com", "qazx fevm xpdp oiew");
+            await client.AuthenticateAsync("ljosecarlos295@gmail.com", "###### #### ### ####");
 
             var inbox = client.Inbox;
             await inbox.OpenAsync(FolderAccess.ReadOnly);
